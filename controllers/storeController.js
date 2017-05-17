@@ -1,9 +1,17 @@
-exports.myMiddleware = (req, res, next) => {
-  req.name = 'Josh'
-  next()
-}
+const mongoose = require('mongoose')
+const Store = mongoose.model('Store')
 
 exports.homePage = (req, res) => {
-  console.log(req.name)
-  res.render('index', {title: 'Im Hungry'})
+  res.render('index', {title: 'Are you hungry'})
+}
+
+exports.addStore = (req, res) => {
+  res.render('editStore', { title: 'Add Store '})
+}
+
+exports.createStore = async (req, res) => {
+  const store = new Store(req.body)
+  await store.save()
+  console.log('Store saved!')
+  res.redirect('/')
 }

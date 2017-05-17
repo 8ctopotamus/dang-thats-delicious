@@ -1,6 +1,6 @@
 ## What is this?
 
-Just you wait folks!
+The __"Dang That's delicious"__ app from Wes Bos' excellent _Learn Node_ course: https://learnnode.com
 
 ## Sample Data
 
@@ -23,5 +23,3 @@ That will populate 16 stores with 3 authors and 41 reviews. The logins for the a
 |Wes Bos|wes@example.com|wes|
 |Debbie Downer|debbie@example.com|debbie|
 |Beau|beau@example.com|beau|
-
-
